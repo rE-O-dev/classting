@@ -74,6 +74,8 @@ const Layer = styled.div`
   opacity: 1;
   width: 100%;
   height: 100%;
+  left: 0;
+  top: 0;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 9999;
   ${(props: any) =>
