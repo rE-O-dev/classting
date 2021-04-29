@@ -30,7 +30,6 @@ export default function Main() {
                 voteList !== null ? (
                     <ul className="voteList">
                         {voteList.map((vote: any, idx: number) => {
-                            console.log(state.user, vote.user);
                             return (
                                 <li className="voteItem" key={idx} onClick={() => {
                                     history.push(`/detail?num=${idx}`);

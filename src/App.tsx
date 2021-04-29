@@ -11,7 +11,6 @@ function App() {
 
   useLayoutEffect(() => {
     const user = localStorage.getItem("user");
-    console.log(user);
     if(user) {
       action.setUser(user);
     }

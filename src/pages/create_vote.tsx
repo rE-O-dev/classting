@@ -88,7 +88,6 @@ const CreateVote = () => {
     }, [title, items, deadLine]);
 
     const callAlert = useCallback((props) => {
-        console.log(props);
         action.setAlertStatus({...props})
     }, [])
 

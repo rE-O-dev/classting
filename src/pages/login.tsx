@@ -78,7 +78,6 @@ const Login = () => {
                     ...inputs,
                     [id]: value
                 });
-                console.log(value, id);
             }} />
         
             <CustomInput id="pw" type="password" value={inputs.pw} label={"비밀번호를 입력해주세요."} onChange={(e: any) => {
@@ -87,7 +86,6 @@ const Login = () => {
                     ...inputs,
                     [id]: value
                 });
-                console.log(value, id);
             }} />
 
             <div className="buttonWrap">
