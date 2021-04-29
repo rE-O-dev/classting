@@ -94,7 +94,7 @@ const Login = () => {
                 <CustomButton onClick={fetchLogin}>
                     로그인
                 </CustomButton>
-                <CustomButton>
+                <CustomButton onClick={() => history.goBack()}>
                     뒤로가기
                 </CustomButton>
             </div>
