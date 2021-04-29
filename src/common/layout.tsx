@@ -15,9 +15,7 @@ const Layout = (props: {children: JSX.Element}) => {
                     <Alert />
                 )
             }
-            <div>
-                {props.children}
-            </div>
+            {props.children}
         </LayoutWrap>
     )
 
@@ -27,8 +25,8 @@ export default Layout;
 
 
 const LayoutWrap = styled.div`
-    display: flex;
-    justify-content: center;
+    max-width: 460px;
     width: 100%;
     height: 100%;
+    margin: 0 auto;
 `

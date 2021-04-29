@@ -3,10 +3,12 @@ import { createContext, useState } from 'react';
 
 type StateType = {
     alertStatus: AlertStatusType;
+    user: string | null;
 }
 
 type ActionType ={
     setAlertStatus: (props: AlertStatusType) => void;
+    setUser: (props: string | null) => void;
 }
 
 type BundleType = {
@@ -18,11 +20,13 @@ const initialData: BundleType = {
     state: {
         alertStatus: {
             status: false
-        }
+        },
+        user: null
     },
 
     action: {
-        setAlertStatus: (props: AlertStatusType): void => {}
+        setAlertStatus: (props: AlertStatusType): void => {},
+        setUser: (props: string | null): void => {}
     }
 }
 
@@ -30,13 +34,16 @@ const Context = createContext(initialData);
 
 const ContextProvider = (props: { children: JSX.Element}) => {
     const [alertStatus, setAlertStatus] = useState<AlertStatusType>(initialData.state.alertStatus);    
-
+    const [user, setUser] = useState(initialData.state.user);
+    
     const state: StateType = {
-        alertStatus
+        alertStatus,
+        user
     }
 
     const action: ActionType = {
-        setAlertStatus
+        setAlertStatus,
+        setUser
     }
 
     const bundle: BundleType = {

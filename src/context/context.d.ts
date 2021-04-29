@@ -4,4 +4,5 @@ type AlertStatusType = {
     msg?: string;
     renderType?: string;
     btn?: string;
+    callback?(): void; 
 }

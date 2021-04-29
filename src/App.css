@@ -38,8 +38,20 @@
 }
 
 
-ul {
+ul, p {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
+
+.buttonWrap {
+  text-align: center;
+  margin-top: 30px;
+
+  
+}
+
+.buttonWrap button+button {
+  margin-left: 16px;
+}
+

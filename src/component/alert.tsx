@@ -50,8 +50,12 @@ export default function AlertComponent() {
                 <button
                 className="common-btn"
                 onClick={() => {
+                    if(state.alertStatus.callback) {
+                      state.alertStatus.callback();
+                    }
+
                     action.setAlertStatus({
-                        status: false,
+                      status: false,
                     });
                 }}
                 >
@@ -107,6 +111,7 @@ const Layer = styled.div`
   }
   .common-btn {
     width: 100%;
+    margin-top: 30px;
     padding: 12px 0;
     background-color: ${primaryColor};
     border: 0px;
