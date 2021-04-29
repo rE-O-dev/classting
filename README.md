@@ -1,13 +1,11 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 # 시작하기
 
 clone 을 받으신 후, yarn 또는 npm i
 npm run start 또는 yarn
+localhost:3000으로 접속.
 
 ## 구현 사항
+CRA.
 localStroage 를 db라고 가정.
 user정보는 json 으로 mockData 사용.
 
